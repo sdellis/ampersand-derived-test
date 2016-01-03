@@ -1,15 +1,9 @@
 // module.exports = "It works from content.js.";
 import {ManifestList} from 'tabula-rasa'
+import Manifest from './manifest'
 
 export default ManifestList.extend({
 
-  derived: {
-    app_url: {
-      deps: ['_id'],
-      fn () {
-        return 'foo/' + this._id
-      }
-    }
-  }
+  model: Manifest
 
 })

@@ -1,13 +1,12 @@
 // require("!style!css!./style.css");
 import app from 'ampersand-app'
-import Collection from './collections'
-import ManifestList from './manifest-collection'
+import Manifest from './manifest'
 import Me from './me'
 // require("./style.css");
 
-var c = new Collection( { _id: 'bar' })
+var m = new Manifest( { _id: 'foo', '@id': 'bar', label: [{ '@value': 'Manifest 1'}] } )
 
-document.write(c.app_url)
+document.write(m.app_url)
 
 window.app = app
 

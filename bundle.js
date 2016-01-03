@@ -50,15 +50,11 @@
 
 	var _ampersandApp2 = _interopRequireDefault(_ampersandApp);
 
-	var _collections = __webpack_require__(45);
+	var _manifest = __webpack_require__(45);
 
-	var _collections2 = _interopRequireDefault(_collections);
+	var _manifest2 = _interopRequireDefault(_manifest);
 
-	var _manifestCollection = __webpack_require__(589);
-
-	var _manifestCollection2 = _interopRequireDefault(_manifestCollection);
-
-	var _me = __webpack_require__(590);
+	var _me = __webpack_require__(589);
 
 	var _me2 = _interopRequireDefault(_me);
 
@@ -66,10 +62,9 @@
 
 	// require("./style.css");
 
-	// require("!style!css!./style.css");
-	var c = new _collections2.default({ _id: 'bar' });
+	var m = new _manifest2.default({ _id: 'foo', '@id': 'bar', label: [{ '@value': 'Manifest 1' }] }); // require("!style!css!./style.css");
 
-	document.write(c.app_url);
+	document.write(m.app_url);
 
 	window.app = _ampersandApp2.default;
 
@@ -5016,13 +5011,13 @@
 
 	var _tabulaRasa = __webpack_require__(46);
 
-	exports.default = _tabulaRasa.Collections.Collection.extend({
+	exports.default = _tabulaRasa.Manifest.extend({
 
 	  derived: {
 	    app_url: {
 	      deps: ['_id'],
 	      fn: function fn() {
-	        return 'foo/' + this._id;
+	        return 'manifests/' + this._id;
 	      }
 	    }
 	  }
@@ -75811,31 +75806,6 @@
 
 /***/ },
 /* 589 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _tabulaRasa = __webpack_require__(46);
-
-	exports.default = _tabulaRasa.ManifestList.extend({
-
-	  derived: {
-	    app_url: {
-	      deps: ['_id'],
-	      fn: function fn() {
-	        return 'foo/' + this._id;
-	      }
-	    }
-	  }
-
-	}); // module.exports = "It works from content.js.";
-
-/***/ },
-/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
