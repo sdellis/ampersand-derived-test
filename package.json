@@ -1,0 +1,23 @@
+{
+  "name": "webpacktest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ampersand-app": "^1.0.4",
+    "ampersand-model": "^6.0.2",
+    "react": "^0.13.3",
+    "tabula-rasa": "^1.0.3",
+    "webpack": "^1.12.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
